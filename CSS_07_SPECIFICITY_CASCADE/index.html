@@ -1,6 +1,4 @@
-<!-- If same type of selector then the element present at last will be applied  -->
-<!-- style="color:blue" It has the highest specificity -->
-<!--  -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,27 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* The specificity of this selector is 1  */
+       
         h1 {
             color: aqua;
         }
 
-        /* The specificity of this selector is 10  */
+        
         .cpurple {
             color: purple;
         }
 
-        /* The specificity of this selector is 10   */
+       
         .yellow {
             color: yellow;
         }
 
-        /* The specificity of this selector is 10+1=11   */
         h1.yellow{
             color: black;
         }
 
-         /* The specificity of this selector is 10  */
          .cred {
             color: red;
         }
@@ -40,7 +36,6 @@
             color: maroon;
         }
 
-        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
         a.harryclass.rohan-class[href]:hover {
             color: blueviolet;
         }
