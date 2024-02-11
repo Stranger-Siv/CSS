@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float And Clear</title>
+    <style>
+        img {
+            float: left;
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .cards :nth-child(3){
+            background-color:aqua;
+            clear: left;
+        
+        }
+        .cards :nth-child(4){
+            background-color: purple;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+            alt="" width="300">
+
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ab dolor illum. Sequi at corrupti culpa illo laboriosam qui? Temporibus ut odit accusantium, velit provident, consequatur minima et, eveniet laboriosam delectus qui vel! Quos.</p>
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores cum a reiciendis ipsum dolor, rem placeat nostrum consectetur, illo ex tempore nobis aut sed voluptates earum voluptas quo, nihil error impedit at maiores corporis!</div>
+        <div class="card">
+            <h1>We Don't want to use it</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

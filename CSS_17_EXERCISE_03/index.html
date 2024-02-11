@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Color Webpage</title>
+    <style>
+        :root {
+            --primarycolor: rgb(246, 247, 197);
+            --secondarycolor: rgb(231, 83, 194);
+            --textcolor: rgb(255, 39, 39);
+            --navcolor: rgb(255, 0, 0);
+            --navhover: rgb(26, 255, 0);
+        }
+        /* :root{
+            --primarycolor:rgb(160, 238, 244);
+            --secondarycolor:rgb(237, 200, 36);
+            --textcolor:rgb(184, 56, 56);
+            --navcolor:rgb(119, 50, 247);
+            --navhover:rgb(230, 71, 71);
+        } */
+        /* :root{
+            --primarycolor:rgb(251, 255, 3);
+            --secondarycolor:rgb(234, 163, 216);
+            --textcolor:rgb(255, 39, 39);
+            --navcolor:rgb(0, 236, 253);
+            --navhover:rgb(119, 0, 149);
+        } */
+
+        /* :root {
+            --primarycolor: rgb(45, 67, 40);
+            --secondarycolor: rgb(251, 255, 0);
+            --textcolor: rgb(255, 255, 255);
+            --navcolor: rgb(255, 0, 0);
+            --navhover: rgb(246, 83, 83);
+        } */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            background-color: var(--secondarycolor);
+            list-style: none;
+            font-size: x-large;
+            display: inline;
+            padding: 10px;
+            margin: 8px;
+            font-weight: bolder;
+            border-radius: 35px;
+        }
+
+        .nav {
+            background-color: var(--navcolor);
+            padding: 17px 0;
+            cursor: pointer;
+        }
+
+        .nav:hover {
+            color: var(--navhover);
+        }
+
+        body {
+
+            background-color: var(--primarycolor);
+        }
+
+        p {
+            margin: 20px;
+            text-align: left;
+            font-size: x-large;
+            font-style: italic;
+            color: var(--textcolor);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>ContactUs</li>
+        </ul>
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veniam iste possimus a enim aliquid alias
+            voluptatem deserunt excepturi neque. Aspernatur commodi error, nisi aperiam sed exercitationem, atque magnam
+            odit quod, sapiente iure asperiores fugit corporis culpa delectus recusandae et minus magni maiores sint
+            accusamus!</p>
+    </div>
+
+</body>
+
+</html>

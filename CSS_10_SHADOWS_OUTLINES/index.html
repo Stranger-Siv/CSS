@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTY</title>
+    <style>
+        * {
+            margin:9px;
+            padding:0px ;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 45px;
+            margin: 45px;
+            width: 344px;
+            /* box-shadow: h-offset | v-offset | blur | spread color inset; */
+            box-shadow: 5px 15px 15px #cd1d1d88;
+        }
+.text-element{
+    text-shadow: 2px 2px 4px #e66e6e;
+    border: 5px solid black;
+    outline: 5px solid rgb(248, 0, 0);
+    outline-offset: 5px;
+    border-radius: 22px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I'm a box
+    </div>
+    <div class="box">also a nice box</div>
+
+    <span>
+        I'm a good
+    </span>
+    <span>boy</span>
+
+    <p class="text-element">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis laboriosam cumque ipsa illo amet, rerum
+        ratione quis, vitae hic ad perferendis, perspiciatis delectus reiciendis sit quod doloremque nostrum. Soluta,
+        cupiditate!
+    </p>
+
+</body>
+
+</html>

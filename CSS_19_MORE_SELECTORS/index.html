@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS MORE SELECTOR</title>
+
+    <style>
+        /* .box:first-child {
+            background-color: green;
+        }
+
+        .box::first-line {
+            color: yellow;
+        } */
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        .box,[data-color="primary"]{
+            padding-top: 45px;
+        } */
+
+        /* .boxes :nth-child(odd){
+            background-color: purple;
+        }
+
+        .boxes :nth-last-child(1){
+            color: white;
+        } */
+
+        .boxes::before {
+            content: "Hello Baccho";
+            color: brown;
+        }
+
+        .boxes::after {
+            content: "Bye Baccho";
+            color: brown;
+        }
+
+        .boxes ::selection {
+            color: aqua;
+            background-color: black;
+        }
+
+        .boxes ::first-letter {
+            color: peru;
+            font-size: 23px;
+        }
+
+        input::placeholder {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="box">Hey I'm a box</div>
+        <div class="box">Hey I'm a box</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+
+</body>
+
+</html>
